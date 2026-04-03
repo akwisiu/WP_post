@@ -1,0 +1,59 @@
+name: WordPress Auto Publish
+
+on:
+  # 每小时执行一次
+  schedule:
+    - cron: '22 * * * *'
+  # 也可以手动触发
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Create config files from secrets
+        run: |
+          # api_config.json
+          cat > api_config.json << 'EOF'
+          {
+            "ai_provider": "groq",
+            "groq_api_key": "${{ secrets.GROQ_API_KEY }}",
+            "groq_model": "llama-3.3-70b-versatile",
+            "deepseek_api_key": "${{ secrets.DEEPSEEK_API_KEY }}",
+            "deepseek_model": "deepseek-chat",
+            "pexels_api_key": "${{ secrets.PEXELS_API_KEY }}"
+          }
+          EOF
+          
+          # wordpress_config.json
+          cat > wordpress_config.json << 'EOF'
+          {
+            "wordpress_url": "${{ secrets.WORDPRESS_URL }}",
+            "username": "${{ secrets.WORDPRESS_USERNAME }}",
+            "app_password": "${{ secrets.WORDPRESS_APP_PASSWORD }}",
+            "default_category": "News",
+            "draft_mode": true,
+            "auto_publish": false,
+            "batch_size": 1,
+            "publish_interval_seconds": 5
+          }
+          EOF
+          
+          echo "Config files created"
+
+      - name: Run publisher
+        run: |
+          python daily_publisher.py
