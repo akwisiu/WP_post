@@ -1,9 +1,9 @@
 name: WordPress Auto Publish
 
 on:
-  # 每小时执行一次
+  # 每天执行一次（北京时间 9:00 = UTC 1:00）
   schedule:
-    - cron: '22 * * * *'
+    - cron: '0 1 * * *'
   # 也可以手动触发
   workflow_dispatch:
 
@@ -48,7 +48,7 @@ jobs:
             "username": "${{ secrets.WORDPRESS_USERNAME }}",
             "app_password": "${{ secrets.WORDPRESS_APP_PASSWORD }}",
             "default_category": "News",
-            "draft_mode": true,
+            "draft_mode": false,
             "auto_publish": false,
             "batch_size": 1,
             "publish_interval_seconds": 5
