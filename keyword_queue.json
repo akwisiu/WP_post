@@ -13,10 +13,6 @@
       "category": "News"
     },
     {
-      "keyword": "What Are the Advantages of Container Energy Storage?",
-      "category": "News"
-    },
-    {
       "keyword": "How to Set Up a Solar Container for Island Energy",
       "category": "News"
     },
@@ -206,6 +202,13 @@
       "post_id": 631,
       "post_url": "https://www.shhjenergy.com/?p=631",
       "status": "draft"
+    },
+    {
+      "keyword": "What Are the Advantages of Container Energy Storage?",
+      "completed_at": "2026-04-03T08:15:50.109660",
+      "post_id": 656,
+      "post_url": "https://www.shhjenergy.com/news/what-are-the-advantages-of-container-energy-storage-3.html",
+      "status": "publish"
     }
   ],
   "failed": []
