@@ -13,10 +13,6 @@
       "category": "News"
     },
     {
-      "keyword": "How to Set Up a Solar Container for Island Energy",
-      "category": "News"
-    },
-    {
       "keyword": "How Do Mobile Solar Containers Work Efficiently?",
       "category": "News"
     },
@@ -208,6 +204,13 @@
       "completed_at": "2026-04-03T08:15:50.109660",
       "post_id": 656,
       "post_url": "https://www.shhjenergy.com/news/what-are-the-advantages-of-container-energy-storage-3.html",
+      "status": "publish"
+    },
+    {
+      "keyword": "How to Set Up a Solar Container for Island Energy",
+      "completed_at": "2026-04-03T08:16:52.234211",
+      "post_id": 660,
+      "post_url": "https://www.shhjenergy.com/news/how-to-set-up-a-solar-container-for-island-energy.html",
       "status": "publish"
     }
   ],
