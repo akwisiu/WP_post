@@ -1,0 +1,10 @@
+{
+  "wordpress_url": "https://www.shhjenergy.com",
+  "username": "4station",
+  "app_password": "pKLT KnDU sztn P7A4 EYbM 5mia",
+  "default_category": "未分类",
+  "draft_mode": true,
+  "auto_publish": false,
+  "batch_size": 3,
+  "publish_interval_seconds": 5
+}
