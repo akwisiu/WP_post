@@ -22,7 +22,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install --upgrade pip
+          pip install requests httpx numpy openpyxl beautifulsoup4 click colorama markdown-it-py
+          pip install humano --no-deps || echo "Warning: humano installation failed, will use fallback"
+          pip install -r requirements.txt || true
 
       - name: Create config files from secrets
         run: |
