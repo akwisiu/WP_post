@@ -168,10 +168,16 @@ Use the above as background context and inspiration. Naturally integrate relevan
 """
 
     if lang == "en":
-        prompt = f"""Write a SEO article about "{keyword}". Date: {today}.
+        # 用户提供的是文章标题，需要AI提取关键词并围绕标题写文章
+        prompt = f"""You are given an article TITLE. Your task:
+1. Extract 1-2 relevant keywords from this title for SEO
+2. Write a SEO article using EXACTLY this title (do NOT change it)
+
+TITLE (use exactly as given): "{keyword}"
+Date: {today}
 {news_block}
 
-Title: 50-60 chars, keyword at front.
+Title: Use EXACTLY the title above - do not modify, do not add prefix/suffix.
 Content: 800-1200 words, use h2 and h3 tags.
 Meta: 150-160 chars.
 Keyword density 1-2%, natural placement.
@@ -189,14 +195,18 @@ JSON only:
 {{"title":"", "meta_description":"", "content":"<h2>...</h2><p>...</p>", "image_queries":["query1","query2","query3","query4"]}}
 """
     else:
-        prompt = f"""你是一位专业的SEO内容写作者。请围绕关键词"{keyword}"写一篇高质量、符合SEO规范的文章。
+        # 用户提供的是文章标题，需要AI提取关键词并围绕标题写文章
+        prompt = f"""你是一位专业的SEO内容写作者。用户提供的是文章标题，请：
+1. 从标题中提取1-2个相关关键词用于SEO
+2. 使用给定的标题写文章（标题不变）
 
+标题（必须完全使用）: "{keyword}"
 今天日期：{today}
 {news_block}
 语言规则：{lang_rule}
 
 标题要求：
-{title_rules}
+必须使用上面给定的标题，不要修改、不要添加前后缀。
 
 内容要求：
 {content_rules}

@@ -1,6 +1,10 @@
 {
   "keywords": [
     {
+      "keyword": "A Guide to Container Energy Storage Systems",
+      "category": "News"
+    },
+    {
       "keyword": "5 Benefits of Container Energy Storage for Businesses",
       "category": "News"
     },
@@ -10,6 +14,34 @@
     },
     {
       "keyword": "What Are the Advantages of Container Energy Storage?",
+      "category": "News"
+    },
+    {
+      "keyword": "How to Set Up a Solar Container for Island Energy",
+      "category": "News"
+    },
+    {
+      "keyword": "How Do Mobile Solar Containers Work Efficiently?",
+      "category": "News"
+    },
+    {
+      "keyword": "What Is the Cost of a Solar Container System?",
+      "category": "News"
+    },
+    {
+      "keyword": "are folding solar panels any good?",
+      "category": "News"
+    },
+    {
+      "keyword": "What is the role of solar containers",
+      "category": "News"
+    },
+    {
+      "keyword": "how long do lithium batteries last",
+      "category": "News"
+    },
+    {
+      "keyword": "How to Build a Desert Solar Container Research Cabin",
       "category": "News"
     }
   ],
@@ -159,6 +191,20 @@
       "completed_at": "2026-04-03T10:30:09.089319",
       "post_id": 623,
       "post_url": "https://www.shhjenergy.com/?p=623",
+      "status": "draft"
+    },
+    {
+      "keyword": "5 Benefits of Container Energy Storage for Businesses",
+      "completed_at": "2026-04-03T11:35:56.488420",
+      "post_id": 627,
+      "post_url": "https://www.shhjenergy.com/?p=627",
+      "status": "draft"
+    },
+    {
+      "keyword": "7 Key Features of Effective Container Energy Storage",
+      "completed_at": "2026-04-03T12:40:34.576417",
+      "post_id": 631,
+      "post_url": "https://www.shhjenergy.com/?p=631",
       "status": "draft"
     }
   ],
