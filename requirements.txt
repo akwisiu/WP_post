@@ -1,39 +1,24 @@
 # WordPress Auto-Publisher Core Dependencies
-# 自动发布系统的核心依赖包
 
 # AI Content Humanization (降低AI率)
-humano==2.0.1
+humano>=2.0.0
 
 # WordPress API and Web Requests
-requests==2.32.5
-httpx==0.28.1
+requests>=2.28.0
+httpx>=0.24.0
 
 # JSON and Data Processing
-numpy==2.4.3
+numpy>=1.20.0
 
 # File I/O and Excel Processing (for CSV keywords)
-openpyxl==3.1.5
+openpyxl>=3.0.0
 
-# Web Scraping for Content Research (optional)
-beautifulsoup4==4.14.3
+# Web Scraping for Content Research
+beautifulsoup4>=4.9.0
 
 # CLI and Progress Display
-click==8.3.1
-colorama==0.4.6
-
-# HTTP and Network
-certifi==2026.2.25
-charset-normalizer==3.4.6
-httpcore==1.0.9
-h11==0.16.0
-anyio==4.12.1
-idna==3.11
+click>=8.0.0
+colorama>=0.4.0
 
 # Markdown and Text Processing
-markdown-it-py==4.0.0
-mdurl==0.0.1
-
-# Note: Groq and DeepSeek API dependencies are handled by their respective modules
-
-# To install all dependencies:
-# pip install -r requirements.txt
+markdown-it-py>=2.0.0
