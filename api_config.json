@@ -1,0 +1,16 @@
+{
+  "_comment": "API密钥配置文件。填入你的真实API Key后保存即可。",
+
+  "ai_provider": "groq",
+  "groq_api_key": "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",
+  "groq_model": "llama-3.3-70b-versatile",
+
+  "deepseek_api_key": "sk-e02dbfa3d1f04df6bcf87b5bf3ad31bd",
+  "deepseek_model": "deepseek-chat",
+
+  "pexels_api_key": "tXfKEazNqpCsiyQQZzKYDGlpXEnUCRMjJPBSrLm0zqOfOlXhvMOcJGo9",
+
+  "_groq_help": "访问 https://console.groq.com/keys 获取免费 Groq API Key（完全免费，速度快）",
+  "_deepseek_help": "访问 https://platform.deepseek.com/api_keys 获取 DeepSeek API Key",
+  "_pexels_help": "访问 https://www.pexels.com/api/ 注册并获取免费 Pexels API Key（免费，每月25000次请求）"
+}
