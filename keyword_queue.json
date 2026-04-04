@@ -13,10 +13,6 @@
       "category": "News"
     },
     {
-      "keyword": "How Do Mobile Solar Containers Work Efficiently?",
-      "category": "News"
-    },
-    {
       "keyword": "What Is the Cost of a Solar Container System?",
       "category": "News"
     },
@@ -211,6 +207,13 @@
       "completed_at": "2026-04-03T08:16:52.234211",
       "post_id": 660,
       "post_url": "https://www.shhjenergy.com/news/how-to-set-up-a-solar-container-for-island-energy.html",
+      "status": "publish"
+    },
+    {
+      "keyword": "How Do Mobile Solar Containers Work Efficiently?",
+      "completed_at": "2026-04-04T05:37:55.875258",
+      "post_id": 664,
+      "post_url": "https://www.shhjenergy.com/news/how-do-mobile-solar-containers-work-efficiently.html",
       "status": "publish"
     }
   ],
